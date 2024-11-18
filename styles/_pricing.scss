@@ -4,46 +4,61 @@
     box-sizing: border-box;
     position: relative;
     text-align: center;
-    font-size: 0;
+    list-style: none;
     width: 100%;
     
     &__title {
-        padding: 20px 0 20px 0;
-        font-size: 30px;
+        padding: 2.5em 0 0.1em 0;
+        font-size: 35px;
         font-weight: 400;
         font-family: 'Raleway';
         color: black;
     }
 
     &__boxes {
-        margin: 20px 50px 0px 50px;
+        margin: 1.5em 0.8em 4em 0.8em;
         padding: 0;
         text-align: center;
 
         &__first {
             border: 2px solid rgb(235, 71, 110);
             border-radius: 15px;
+            margin: 3em 0.5em;
         }
+
         &__second {
             border: 2px solid rgb(7, 172, 230);
             border-radius: 15px;
+            margin: 3em 0.5em;
         }
-        &__button {
-            margin: -18px 0px 20px 0px;
-            padding: 10px 40px;
-            border: none;
-            color: white;
-
-            &__first {
-                background-color: rgb(235, 71, 110);
-                border-radius: 18px;
-
-            }
-            &__second {
-                background-color: rgb(7, 172, 230);
-                border-radius: 18px;
-            }
+        &__third {
+            border: 2px solid rgb(85, 223, 180);
+            border-radius: 15px;
+            margin: 3em 0.5em;
         }
+    }
+
+    @mixin pricing-button {
+        transform: translateY(2em);
+        padding: 1.5em 4em;
+        border: none;
+        color: white;
+        border-radius: 2em;
+        font-weight: 700
+    }
+
+    .pricing__boxes__button--first {
+        @include pricing-button;
+        background-color: rgb(235, 71, 110);
+    }
+    
+    .pricing__boxes__button--second {
+        @include pricing-button;
+        background-color: rgb(7, 172, 230);
+    }
+    .pricing__boxes__button--third {
+        @include pricing-button;
+        background-color: rgb(85, 223, 180);
     }
 
     &__box {
@@ -58,20 +73,22 @@
 
         @media (min-width: 601px) {
             width: 100%;
-        }
+        }  
+        
 
-            &__plan {
+        &__plan {
                 font-size: 20px;
                 font-weight: 700;
-                margin: 38% 0px -40px 15%;
+                margin: 38% 0.5em -2em 15%;
                 @media (min-width: 601px) {
                     margin: 5% 0 20px 0;
                 }
             }
 
-            &__price {
-                margin: 35px 0px 38% 15%;
-                font-size: 46px;
+        &__price {
+                margin: 0.7em 0.3em 0 15%;
+                font-size: 3rem;
+                font-weight: 300;
                 font-family: 'Open Sans';
                 &__first {
                     color: rgb(235, 71, 110);
@@ -79,15 +96,23 @@
                 &__second {
                     color: rgb(7, 172, 230);
                 }
+                &__third {
+                    color:rgb(85, 223, 180);
+                }
                 @media (min-width: 601px) {
                     margin: 0;
                 }
             }
+        &__offer {
+            margin: 0 1em 25% 15%;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
 
-            &--right {
+        &--right {
                 font-family: 'Open Sans';
                 font-size: 14px;
-                padding: 15px 10px 25px 15px;
+                padding: 1.2em 0.5em 0.3em 1em;
                 text-align: left;
                 line-height: 2.5em;
                 @media (min-width: 601px) {
@@ -96,14 +121,14 @@
                 }
             }
 
-            &--left {
+        &--left {
                 vertical-align: middle;
             }
 
-            &__tick {
+        &__tick {
                 color: rgb(85, 223, 180);
             }
-            &__cross {
+        &__cross {
                 color: rgb(235, 71, 110);
             }
     }

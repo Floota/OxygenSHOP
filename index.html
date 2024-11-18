@@ -36,19 +36,19 @@
                 <p class="stats__text">The most popular sales platform in the country</p>
                 <ul class="stats__list">
                     <li class="stats__list__item">
-                        <img class="stats__list__item__ellipse ellipse--red" src="./images/Ellipse 1.png" alt="Red Ellipse">
+                        <img class="stats__list__item__ellipse--red" src="./images/Ellipse 1.png" alt="Red Ellipse">
                         <img class="stats__list__item__element" src="./images/Group.png" alt="Persona Vector Art">
                         <p class="stats__list__item__number">100000+</p>
                         <p class="stats__list__item__text">daily entries</p>
                     </li>
                     <li class="stats__list__item">
-                        <img class="stats__list__item__ellipse ellipse--blue" src="./images/Ellipse 2.png" alt="Blue Ellipse">
+                        <img class="stats__list__item__ellipse--blue" src="./images/Ellipse 2.png" alt="Blue Ellipse">
                         <img class="stats__list__item__eye" src="./images/Eye 2.png" alt="Eye Vector Art">
                         <p class="stats__list__item__number">2000000+</p>
                         <p class="stats__list__item__text">products seen every day</p>
                     </li>
                     <li class="stats__list__item">
-                        <img class="stats__list__item__ellipse ellipse--green" src="./images/Ellipse 3.png" alt="Green Ellipse">
+                        <img class="stats__list__item__ellipse--green" src="./images/Ellipse 3.png" alt="Green Ellipse">
                         <img class="stats__list__item__catalog" src="./images/Catalog 2.png" alt="Catalogue Vector Art">
                         <p class="stats__list__item__number">10000+</p>
                         <p class="stats__list__item__text">new posts daily</p>
@@ -75,7 +75,7 @@
                     </li>
                     <li class="taglines__list__item">
                         <h3 class="taglines__list__item__third__title">Increase your brand recognition!</h3>
-                        <p class="taglines__list__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p class="taglines__list__item__text--third">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         
                     </li>
                     <div class="taglines__box">
@@ -85,32 +85,31 @@
             </section>
             <section class="pricing">
                 <h2 class="pricing__title">Pricing</h2>
-                <ul class="pricing__boxes">
-                    <li class="pricing__boxes__first">
+                <article class="pricing__boxes">
+                    <div class="pricing__boxes__first">
                         <ul class="pricing__box">
-                            <div class="pricing__box__left">
+                            <div class="pricing__box--left">
                                 <p class="pricing__box__plan">Basic</p>
-                                <p class="pricing__box__price"><span class="pricing__box__price__first">$0</span></p>
+                                <p class="pricing__box__price">
+                                    <span class="pricing__box__price__first">$0</span>
+                                </p>
                             </div>
                         </ul>
                         <ul class="pricing__box">
-                                <div class="pricing__box--right">
-                                    <li><span class="pricing__box__tick">☑</span> 100MB HDD</li>
-                                    <li><span class="pricing__box__tick">☑</span> 1 Subdomain</li>
-                                    <li><span class="pricing__box__tick">☑</span> 2 E-mails</li>
-                                    <li><span class="pricing__box__cross">☒</span> Two year license</li>
-                                    <li><span class="pricing__box__cross">☒</span> Full support</li>
-                                </div>
-                            </ul>
+                            <div class="pricing__box--right">
+                                <li><span class="pricing__box__tick">☑</span> 100MB HDD</li>
+                                <li><span class="pricing__box__tick">☑</span> 1 Subdomain</li>
+                                <li><span class="pricing__box__tick">☑</span> 2 E-mails</li>
+                                <li><span class="pricing__box__cross">☒</span> Two year license</li>
+                                <li><span class="pricing__box__cross">☒</span> Full support</li>
+                            </div>
                         </ul>
-                        <div class="pricing__boxes__button">
-                            <button class="pricing__boxes__button__first">Begin</button>
-                        </div>
-                    </li>
-                    <li class="pricing__boxes__second">
+                        <button class="pricing__boxes__button--first">Begin</button>
+                    </div>
+                    <div  class="pricing__boxes__second">
                         <ul class="pricing__box">
                             <div class="pricing__box__left">
-                                <p class="pricing__box__plan">Premium</p>
+                                <p class="pricing__box__plan">Proffesional</p>
                                 <p class="pricing__box__price"><span class="pricing__box__price__second">$25</span></p>
                                 <p class="pricing__box__offer">Limited Offer</p>
                             </div>
@@ -125,9 +124,32 @@
                                 </div>
                             </ul>
                         </ul>
-                        <button class="pricing__boxes__button__second">Begin</button>
-                    </li>
-                </ul>
+                        <button class="pricing__boxes__button--second">Begin</button>
+                    </div>
+                    <div  class="pricing__boxes__third">
+                        <ul class="pricing__box">
+                            <div class="pricing__box__left">
+                                <p class="pricing__box__plan">Premium</p>
+                                <p class="pricing__box__price"><span class="pricing__box__price__third">$60</span></p>
+                                <p class="pricing__box__offer">Limited Offer</p>
+                            </div>
+                        </ul>
+                        <ul class="pricing__box">
+                                <div class="pricing__box--right">
+                                    <li><span class="pricing__box__tick">☑</span> 2GB HDD</li>
+                                    <li><span class="pricing__box__tick">☑</span> 5 Subdomains</li>
+                                    <li><span class="pricing__box__tick">☑</span> 20 E-mails</li>
+                                    <li><span class="pricing__box__tick">☑</span> Two year license</li>
+                                    <li><span class="pricing__box__tick">☑</span> Full support</li>
+                                </div>
+                            </ul>
+                        </ul>
+                        <button class="pricing__boxes__button--third">Begin</button>
+                    </div>
+                </article>
+            </section>
+            <section class="contact">
+                
             </section>
         </main>
         <footer class="footer">
