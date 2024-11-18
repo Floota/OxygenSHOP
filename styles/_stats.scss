@@ -2,11 +2,14 @@
     display: inline-block;
     text-align: center;
     width: 100%;
+    vertical-align: middle;
+
 
     &__text {
         font-size: 1.8rem;
         font-weight: 300;
         margin: 0.5em 2em 2em 2em;
+
     }
 
     &__list {
@@ -15,10 +18,11 @@
         list-style: none;
 
         @media only screen and (min-width: 1000px) {
+            margin: 0 5% 0 5%;
             display: flex;
-            justify-content: space-around;
-            flex: 0 0 300px;
-            gap: 20px;
+            align-content: center;
+            justify-content: space-between;
+            flex: 1 2 0;
         }
 
         &__item {
@@ -26,7 +30,7 @@
         line-height: 2em;
         
         @media only screen and (min-width: 1000px) {
-                flex: 0 0 300px;
+                flex: 2 2 0;
                 display: block;
         }
             &__ellipse {

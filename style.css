@@ -12,6 +12,12 @@
   box-sizing: border-box;
   text-wrap: nowrap;
 }
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+}
 .navbar__container {
   display: inline-block;
   text-align: right;
@@ -26,6 +32,11 @@
   padding-left: 0.5em;
   line-height: 0.5em;
 }
+@media only screen and (min-width: 1000px) {
+  .navbar__logo {
+    padding-left: 10%;
+  }
+}
 .navbar__menu {
   display: inline-block;
   padding: 0.4em 0.5em 0 0;
@@ -34,9 +45,42 @@
   font-size: 35px;
   color: rgb(8, 166, 228);
 }
+@media only screen and (min-width: 1000px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__list {
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+}
+@media only screen and (min-width: 1000px) {
+  .navbar__list {
+    margin: 0 5% 0 45%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .navbar__list__item {
   display: none;
 }
+@media only screen and (min-width: 1000px) {
+  .navbar__list__item {
+    padding: 30px 2em;
+    display: flex;
+    color: lightgray;
+    height: 100%;
+  }
+  .navbar__list__item:hover {
+    color: black;
+    border-bottom: 3px solid rgb(8, 166, 228);
+  }
+}
+
 .landing {
   display: inline-block;
   width: 100%;
@@ -91,6 +135,7 @@
   display: inline-block;
   text-align: center;
   width: 100%;
+  vertical-align: middle;
 }
 .stats__text {
   font-size: 1.8rem;
@@ -104,10 +149,11 @@
 }
 @media only screen and (min-width: 1000px) {
   .stats__list {
+    margin: 0 5% 0 5%;
     display: flex;
-    justify-content: space-around;
-    flex: 0 0 300px;
-    gap: 20px;
+    align-content: center;
+    justify-content: space-between;
+    flex: 1 2 0;
   }
 }
 .stats__list__item {
@@ -116,7 +162,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .stats__list__item {
-    flex: 0 0 300px;
+    flex: 2 2 0;
     display: block;
   }
 }
@@ -245,7 +291,7 @@
 }
 .pricing__title {
   padding: 2.5em 0 0.1em 0;
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 400;
   font-family: "Raleway";
   color: black;
