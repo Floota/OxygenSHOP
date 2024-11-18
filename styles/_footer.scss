@@ -1,0 +1,40 @@
+
+.footer {
+    position: relative; 
+    bottom: 0;
+    left: 0;
+    display: inline-block; 
+    width: 100%; 
+    vertical-align: bottom; 
+    background-color: #f1f1f1;
+    padding: 15px 0px 20px 0px;
+
+    box-shadow: 0px 0px 5px 5px gray;
+    &__text {
+        position: absolute;
+        left:0;
+        font-size: 30px;
+        padding-left:15px;
+        margin-bottom: -15px;
+        line-height: 15px;
+
+        &__name {
+            margin: 10px 0 0 0;
+            color: rgb(8, 166, 228);
+        }
+        &__copyright {
+            margin: 15px 0 0 0;
+            font-size: 15px;
+            color: gray;
+        }
+    }
+    &__images {
+        display: absolute;
+        margin: 20px 18px 0 0px;
+        text-align: right;
+
+        &--facebook {
+            padding-left: 20px;
+        }
+    }
+}

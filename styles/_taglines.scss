@@ -1,0 +1,84 @@
+.taglines {
+    font-family: 'Raleway';
+    padding: 20px 22px 20px 22px;
+    min-height: 400px;
+    background-color: rgb(247, 247, 247);
+
+    &__list {
+            padding: 0;
+            list-style: none;
+        &__item {
+            border-radius: 3px;
+            border: 1px solid rgb(234, 235, 238);
+            margin: 20px 0px 20px 0px;
+            padding: 5% 20px 10px 20px;
+            background-color: white;
+
+            &__title {
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+            &__text {
+                font-size: 13px;
+                text-align: left;
+                text-wrap: wrap;
+            }
+
+            &__first {
+                position: relative;
+
+                &__laptop {
+                    margin-top: 15px;
+                    width: 65%;
+                    height: auto;
+                    transform: translate(-15%, 5%);
+                }
+
+                &__ellipse {
+                    width: 25%;
+                    height: auto;
+                    transform: translate(220%, -65%);
+                    z-index: -1;
+                }
+            }
+            &__second {
+                position: relative;
+
+                &__phone {
+                    width: 55%;
+                    height: auto;
+                    transform: translate(-20%, 8%);
+                }
+
+                &__ellipse {
+                    width: 40%;
+                    height: auto;
+                    transform: translate(70%, -15%);
+                    z-index: -1;                
+                }
+            }
+            &__third__title {
+                margin: 0px 0px 0px 0px;
+                font-size: 30px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__box {
+        display: block;
+        position: relative;
+        background-color: rgb(85, 223, 180);
+        border-radius: 3px;
+        margin: -20px 0px 20px 0px;
+        width: 100%;
+        height: 200px;
+    }
+    &__box__trumpet {
+        display: block;
+        position: relative;
+        width: 90%;
+        height: 110%;
+        transform: translate(0%, 12%);
+    }
+}
