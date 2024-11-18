@@ -1,0 +1,103 @@
+
+.contact {
+    box-sizing: border-box;
+    width: 100%;
+
+    &__title {
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 0 0 0.1em 0.8em;
+    }
+    &__subtitle {
+        font-family: 'Open Sans';
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin: 0 0 0.3em 2em;
+    }
+
+    &__info {
+        display: inline-block;
+        vertical-align: baseline;
+        margin: 1em 1em 0.5em 2em;
+
+        &__mail {
+            padding: 0 0 0 0;
+        }
+        &__phone {
+            padding: 0 0 0 0;
+        }
+
+        &__text {
+            display: inline-block;
+            color: #A5A5A5;
+            font-family: 'Open Sans';
+            font-size: 1em;
+            margin: 1em 0 0 0.5em;
+            transform: translateY(-0.3em);
+        }
+        &__input {
+            &::-webkit-input-placeholder {
+                color: rgb(8, 166, 228);
+                font-size: 0.8em;
+
+            }
+            margin: 1em 2em;
+            border: none;
+            border-bottom: 2px lightgray solid;
+            color: rgb(8, 166, 228);
+            line-height: 4.5em;
+            letter-spacing: 0.3em;
+            width: 80%;
+        }
+    }
+    &__checkbox[type="checkbox"] {
+        display: inline-block;
+        position: relative;
+        margin: 1em 0 0 2em;
+        background-color: white;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border: 1px solid lightgray;
+        border-radius: 0.3em;
+        outline: none;
+        cursor: pointer;
+
+        &:checked {
+            border-color: gray;
+
+            &::after {
+                content: '✓';
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(8, 166, 228);
+                font-size: 1.5em;
+            }
+        }
+    }
+    &__checkbox__text {
+        color: #707070;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        display: inline-block;
+        margin: -3em 2em 3em 6em;
+    }
+    &__container {
+        text-align: right;
+    }
+    &__button {
+        font-family: 'Open Sans';
+        text-align: right;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 1.5em 6.5em 1.5em 6.5em;
+        margin: 0 8% 3.5em 0;
+        border-radius: 1cm;
+        background-color: rgb(8, 166, 228);
+        box-shadow: 2px 8px 15px rgb(106, 215, 255);
+    }
+}

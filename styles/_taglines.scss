@@ -35,7 +35,7 @@
                 position: relative;
 
                 &__laptop {
-                    margin-top: 15px;
+                    padding-top: 3%;
                     width: 65%;
                     height: auto;
                     transform: translate(-15%, 5%);
@@ -52,9 +52,10 @@
                 position: relative;
 
                 &__phone {
+                    padding-top: 3%;
                     width: 55%;
                     height: auto;
-                    transform: translate(-20%, 8%);
+                    transform: translate(-20%, 10%);
                 }
 
                 &__ellipse {
@@ -77,7 +78,7 @@
         background-color: rgb(85, 223, 180);
         border-radius: 0.2em;
         margin: -2em 0.3em 1.5em 0.3em;
-        height: 11em;
+        height: 10%;
     }
     &__box__trumpet {
         display: block;

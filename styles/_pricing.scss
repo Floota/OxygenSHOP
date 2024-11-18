@@ -16,7 +16,7 @@
     }
 
     &__boxes {
-        margin: 1.5em 0.8em 4em 0.8em;
+        margin: 1.8em 1.5em 4em 1.8em;
         padding: 0;
         text-align: center;
 
@@ -79,9 +79,10 @@
         &__plan {
                 font-size: 20px;
                 font-weight: 700;
-                margin: 38% 0.5em -2em 15%;
+                margin: 50% 0.5em -2em 15%;
                 @media (min-width: 601px) {
-                    margin: 5% 0 20px 0;
+                    margin: 5% 0 1em 0;
+                    padding: 0;
                 }
             }
 
@@ -101,28 +102,40 @@
                 }
                 @media (min-width: 601px) {
                     margin: 0;
+                    padding: 0;
                 }
             }
         &__offer {
             margin: 0 1em 25% 15%;
             font-size: 0.7rem;
             font-weight: 700;
+            @media (min-width: 601px) {
+                margin: 0 0 5em 0;
+                padding: 0;
+            }
         }
 
         &--right {
                 font-family: 'Open Sans';
                 font-size: 14px;
                 padding: 1.2em 0.5em 0.3em 1em;
+                margin: 25% 0 25% 0;
                 text-align: left;
                 line-height: 2.5em;
                 @media (min-width: 601px) {
                     text-align: center;
                     margin: 0;
+                    padding: 0;
                 }
             }
 
         &--left {
                 vertical-align: middle;
+                margin: 40% 0 40% 0;
+                @media (min-width: 601px) {
+                    margin: 0;
+                    padding: 0;
+                }
             }
 
         &__tick {
