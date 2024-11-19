@@ -19,6 +19,13 @@
         margin: 1.8em 1.5em 4em 1.8em;
         padding: 0;
         text-align: center;
+        @media only screen and (min-width: 800px) {
+            margin: 0 5% 0 5%;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            flex: 1 2 0;
+        }
 
         &__first {
             border: 2px solid rgb(235, 71, 110);
@@ -26,8 +33,7 @@
             margin: 4em 1.5em;
             transition: 0.3s;
             &:hover {
-                margin: 5em 1em;
-                padding: 1em 0 0 0;
+                transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(214, 105, 131);
                 .pricing__boxes__button--first {
                     transition: 0.3s;
@@ -43,8 +49,7 @@
             margin: 4em 1.5em;
             transition: 0.3s;
             &:hover {
-                margin: 5em 1em;
-                padding: 1em 0 0 0;
+                transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(105, 194, 226);
                 .pricing__boxes__button--second {
                     transition: 0.3s;
@@ -58,8 +63,7 @@
             margin: 4em 1.5em;
             transition: 0.3s;
             &:hover {
-                margin: 5em 1em;
-                padding: 1em 0 0 0;
+                transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(129, 212, 186);
                 .pricing__boxes__button--third {
                     transition: 0.3s;
@@ -82,6 +86,9 @@
     .pricing__boxes__button--first {
         @include pricing-button;
         background-color: rgb(235, 71, 110);
+        @media only screen and (min-width: 800px) {
+            transform: translateY(4em);
+        }
     }
     
     .pricing__boxes__button--second {
@@ -111,15 +118,15 @@
         &__plan {
                 font-size: 20px;
                 font-weight: 700;
-                margin: 50% 0.5em -2em 15%;
+                margin: 40% auto -2em auto;
                 @media (min-width: 601px) {
-                    margin: 5% 0 1em 0;
+                    margin: 5% 0 auto 0;
                     padding: 0;
                 }
             }
 
         &__price {
-                margin: 0.7em 0.3em 0 15%;
+                margin: 0.7em auto 0 auto;
                 font-size: 3rem;
                 font-weight: 300;
                 font-family: 'Open Sans';
@@ -138,11 +145,11 @@
                 }
             }
         &__offer {
-            margin: 0 1em 15% 15%;
+            margin: 0 1em 0 0;
             font-size: 0.7rem;
             font-weight: 700;
             @media (min-width: 601px) {
-                margin: 0 0 5em 0;
+                margin: 0;
                 padding: 0;
             }
         }
@@ -151,12 +158,12 @@
                 font-family: 'Open Sans';
                 font-size: 14px;
                 padding: 1.2em 0.5em 0.3em 1em;
-                margin: 10% 0 10% 0;
+                margin: 20% 0 10% 0;
                 text-align: left;
                 line-height: 2.5em;
                 @media (min-width: 601px) {
                     text-align: center;
-                    margin: 0;
+                    margin: 5% 0 5% 0;
                     padding: 0;
                 }
             }

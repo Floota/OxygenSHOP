@@ -1,31 +1,55 @@
 
 .contact {
     box-sizing: border-box;
+    padding-top: 3em;
     width: 100%;
+
+    @media only screen and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr; // Stack the articles on smaller screens
+        gap: 1em;
+        padding: 0 10%; // Add padding to the left and right of the grid
+    }
 
     &__title {
         text-align: left;
         font-size: 2.5rem;
         font-weight: 400;
-        margin: 0 0 0.1em 0.8em;
+        margin: 0 0 0.1em 0.4em;
     }
     &__subtitle {
         font-family: 'Open Sans';
         font-size: 0.95rem;
         font-weight: 500;
-        margin: 0 0 0.3em 2em;
+        margin: 0 0 0.3em 1em;
     }
-
+    &__input {
+        padding: 0 0 0 2em;
+        @media only screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        }
+    }
     &__info {
         display: inline-block;
         vertical-align: baseline;
         margin: 1em 1em 0.5em 2em;
 
+        @media only screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: column; // Stack items vertically
+        align-items: baseline; // Align items to the start of the container
+        }
+        &__container {
+            margin: 0 0 0.1em 1em;
+        }
+
         &__mail {
-            padding: 0 0 0 0;
+            padding: inherit;
         }
         &__phone {
-            padding: 0 0 0 0;
+            padding:inherit;
         }
 
         &__text {
@@ -33,7 +57,8 @@
             color: #A5A5A5;
             font-family: 'Open Sans';
             font-size: 1em;
-            margin: 1em 0 0 0.5em;
+            font-weight: 500;
+            margin: 1em 2em 0 0.5em;
             transform: translateY(-0.3em);
         }
         &__input {
@@ -42,13 +67,14 @@
                 font-size: 0.8em;
 
             }
-            margin: 1em 2em;
+            margin: 1em 1em;
             border: none;
             border-bottom: 2px lightgray solid;
             color: rgb(8, 166, 228);
             line-height: 4.5em;
             letter-spacing: 0.3em;
-            width: 80%;
+            width: 
+            85%;
         }
     }
     &__checkbox[type="checkbox"] {
