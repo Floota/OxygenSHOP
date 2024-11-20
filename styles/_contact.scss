@@ -6,9 +6,9 @@
 
     @media only screen and (min-width: 800px) {
         display: grid;
-        grid-template-columns: 1fr 1fr; // Stack the articles on smaller screens
+        grid-template-columns: 1fr 1fr;
         gap: 1em;
-        padding: 0 10%; // Add padding to the left and right of the grid
+        padding: 4em 10% 1em;
     }
 
     &__title {
@@ -38,8 +38,9 @@
 
         @media only screen and (min-width: 800px) {
         display: flex;
-        flex-direction: column; // Stack items vertically
-        align-items: baseline; // Align items to the start of the container
+        margin: 1em 1em 0.5em 9em;
+        flex-direction: column;
+        align-items: baseline;
         }
         &__container {
             margin: 0 0 0.1em 1em;

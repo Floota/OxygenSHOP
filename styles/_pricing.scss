@@ -1,44 +1,36 @@
 
 .pricing {
     font-family: 'Raleway';
-    box-sizing: border-box;
-    position: relative;
     text-align: center;
-    list-style: none;
-    width: 100%;
     
     &__title {
         padding: 2.5em 0 0.1em 0;
         font-size: 2rem;
         font-weight: 400;
         font-family: 'Raleway';
-        color: black;
     }
 
     &__boxes {
-        margin: 1.8em 1.5em 4em 1.8em;
-        padding: 0;
-        text-align: center;
         @media only screen and (min-width: 800px) {
-            margin: 0 5% 0 5%;
+            margin: 0 8% 0 8%;
             display: flex;
-            align-content: center;
             justify-content: space-between;
-            flex: 1 2 0;
         }
 
         &__first {
             border: 2px solid rgb(235, 71, 110);
             border-radius: 15px;
-            margin: 4em 1.5em;
+            margin: 3em 1.5em;
             transition: 0.3s;
+            @media only screen and (min-width: 800px) {
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(214, 105, 131);
-                .pricing__boxes__button--first {
-                    transition: 0.3s;
-                    box-shadow: 0px 5px 25px 5px rgb(214, 105, 131);
-                    z-index: -1;
+                    .pricing__boxes__button--first {
+                        transition: 0.3s;
+                        box-shadow: 0px 5px 25px 5px rgb(214, 105, 131);
+                        z-index: -1;
+                    }
                 }
             }
         }
@@ -46,28 +38,32 @@
         &__second {
             border: 2px solid rgb(7, 172, 230);
             border-radius: 15px;
-            margin: 4em 1.5em;
+            margin: 3em 1.5em;
             transition: 0.3s;
+            @media only screen and (min-width: 800px) {
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(105, 194, 226);
-                .pricing__boxes__button--second {
-                    transition: 0.3s;
-                    box-shadow: 0px 5px 25px 5px rgb(105, 194, 226);
+                    .pricing__boxes__button--second {
+                        transition: 0.3s;
+                        box-shadow: 0px 5px 25px 5px rgb(105, 194, 226);
+                    }
                 }
             }
         }
         &__third {
             border: 2px solid rgb(85, 223, 180);
             border-radius: 15px;
-            margin: 4em 1.5em;
+            margin: 3em 1.5em;
             transition: 0.3s;
+            @media only screen and (min-width: 800px) {
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 0px 20px 1px rgb(129, 212, 186);
-                .pricing__boxes__button--third {
-                    transition: 0.3s;
-                    box-shadow: 0px 5px 25px 5px rgb(129, 212, 186);
+                    .pricing__boxes__button--third {
+                        transition: 0.3s;
+                        box-shadow: 0px 5px 25px 5px rgb(129, 212, 186);
+                    }
                 }
             }
         }
@@ -106,7 +102,6 @@
         width: 48%;
         vertical-align: top;
         list-style: none; 
-        padding: 0;
         font-size: 16px; 
         box-sizing: border-box;
 
@@ -118,7 +113,7 @@
         &__plan {
                 font-size: 20px;
                 font-weight: 700;
-                margin: 70% auto -2em auto;
+                margin: 50% auto -2em auto;
                 @media (min-width: 601px) {
                     margin: 5% 0 auto 0;
                     padding: 0;

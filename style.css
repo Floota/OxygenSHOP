@@ -200,16 +200,16 @@
 
 .taglines {
   font-family: "Raleway";
-  padding: 2.5em 1.8em;
+  padding: 3em 0;
   min-height: 400px;
   background-color: rgb(247, 247, 247);
 }
 .taglines__list {
-  padding: 0;
   list-style: none;
 }
 @media only screen and (min-width: 800px) {
   .taglines__list {
+    padding: 0 3em;
     display: grid;
     grid-template-columns: auto 43%;
     align-items: center;
@@ -217,28 +217,29 @@
   .taglines__list__item {
     grid-column: span 2;
   }
-  .taglines__list > li:last-of-type {
+  .taglines__list > article:last-of-type {
+    margin: 0 6% 0 26%;
     grid-column: 1;
     grid-row: 3;
   }
   .taglines__list > .taglines__box {
     grid-column: 2;
     grid-row: 3;
-    height: 15rem;
+    height: 17rem;
     width: 65%;
-    margin: 5% 25% 5% 0;
+    margin: 5% 0% 5% 0;
   }
 }
 .taglines__list__item {
   border-radius: 3px;
   border: 1px solid rgb(234, 235, 238);
-  padding: 1em;
+  padding: 1.5em;
   margin: 2em 1em;
   background-color: white;
 }
 .taglines__list__item:nth-of-type(3) {
   margin: 2em 1em 0 1em;
-  padding: 0 1.4em 1em 1.4em;
+  padding: 1em 9em 1em 1.4em;
 }
 @media only screen and (min-width: 800px) {
   .taglines__list__item {
@@ -250,14 +251,14 @@
   }
   .taglines__list__item .taglines__list__item__content {
     margin: 0 3% 0 3%;
-    padding: 1em 0 1em 0;
+    padding: 1em 4em 1em 0;
   }
   .taglines__list__item .taglines__list__item__content--first {
     grid-column: 1;
     grid-row: 1;
   }
   .taglines__list__item .taglines__list__item__content--second {
-    margin: 0 10% 0 20%;
+    margin: 0 0 0 20%;
   }
   .taglines__list__item .taglines__list__item__image--first {
     grid-column: 2;
@@ -265,8 +266,7 @@
   }
   .taglines__list__item:nth-of-type(3) {
     display: block;
-    margin: 0 18% 0 25%;
-    height: 16rem;
+    height: 17rem;
   }
 }
 .taglines__list__item .taglines__list__item__line {
@@ -292,7 +292,7 @@
 .taglines__list__item__title {
   font-size: 1.6rem;
   text-align: left;
-  margin: 1em auto;
+  margin: 1em 5em 1em 0;
   font-weight: 400;
 }
 .taglines__list__item__text {
@@ -305,7 +305,7 @@
   position: relative;
 }
 .taglines__list__item__first__laptop {
-  padding-top: 3%;
+  padding-top: 1rem;
   width: 65%;
   height: auto;
   transform: translate(-15%, -3%);
@@ -335,7 +335,7 @@
 }
 .taglines__list__item__second__phone {
   padding-top: 3%;
-  width: 55%;
+  width: 59%;
   height: auto;
   transform: translate(-20%, 10%);
 }
@@ -367,81 +367,75 @@
 }
 @media only screen and (min-width: 800px) {
   .taglines__box__trumpet {
-    transform: translate(6%, 3em);
+    transform: translate(6%, 4em);
   }
 }
 
 .pricing {
   font-family: "Raleway";
-  box-sizing: border-box;
-  position: relative;
   text-align: center;
-  list-style: none;
-  width: 100%;
 }
 .pricing__title {
   padding: 2.5em 0 0.1em 0;
   font-size: 2rem;
   font-weight: 400;
   font-family: "Raleway";
-  color: black;
-}
-.pricing__boxes {
-  margin: 1.8em 1.5em 4em 1.8em;
-  padding: 0;
-  text-align: center;
 }
 @media only screen and (min-width: 800px) {
   .pricing__boxes {
-    margin: 0 5% 0 5%;
+    margin: 0 8% 0 8%;
     display: flex;
-    align-content: center;
     justify-content: space-between;
-    flex: 1 2 0;
   }
 }
 .pricing__boxes__first {
   border: 2px solid rgb(235, 71, 110);
   border-radius: 15px;
-  margin: 4em 1.5em;
+  margin: 3em 1.5em;
   transition: 0.3s;
 }
-.pricing__boxes__first:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 20px 1px rgb(214, 105, 131);
-}
-.pricing__boxes__first:hover .pricing__boxes__button--first {
-  transition: 0.3s;
-  box-shadow: 0px 5px 25px 5px rgb(214, 105, 131);
-  z-index: -1;
+@media only screen and (min-width: 800px) {
+  .pricing__boxes__first:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 1px rgb(214, 105, 131);
+  }
+  .pricing__boxes__first:hover .pricing__boxes__button--first {
+    transition: 0.3s;
+    box-shadow: 0px 5px 25px 5px rgb(214, 105, 131);
+    z-index: -1;
+  }
 }
 .pricing__boxes__second {
   border: 2px solid rgb(7, 172, 230);
   border-radius: 15px;
-  margin: 4em 1.5em;
+  margin: 3em 1.5em;
   transition: 0.3s;
 }
-.pricing__boxes__second:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 20px 1px rgb(105, 194, 226);
-}
-.pricing__boxes__second:hover .pricing__boxes__button--second {
-  transition: 0.3s;
-  box-shadow: 0px 5px 25px 5px rgb(105, 194, 226);
+@media only screen and (min-width: 800px) {
+  .pricing__boxes__second:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 1px rgb(105, 194, 226);
+  }
+  .pricing__boxes__second:hover .pricing__boxes__button--second {
+    transition: 0.3s;
+    box-shadow: 0px 5px 25px 5px rgb(105, 194, 226);
+  }
 }
 .pricing__boxes__third {
   border: 2px solid rgb(85, 223, 180);
   border-radius: 15px;
-  margin: 4em 1.5em;
+  margin: 3em 1.5em;
   transition: 0.3s;
 }
-.pricing__boxes__third:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 20px 1px rgb(129, 212, 186);
-}
-.pricing__boxes__third:hover .pricing__boxes__button--third {
-  transition: 0.3s;
-  box-shadow: 0px 5px 25px 5px rgb(129, 212, 186);
+@media only screen and (min-width: 800px) {
+  .pricing__boxes__third:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 1px rgb(129, 212, 186);
+  }
+  .pricing__boxes__third:hover .pricing__boxes__button--third {
+    transition: 0.3s;
+    box-shadow: 0px 5px 25px 5px rgb(129, 212, 186);
+  }
 }
 .pricing .pricing__boxes__button--first {
   transform: translateY(2em);
@@ -481,7 +475,6 @@
   width: 48%;
   vertical-align: top;
   list-style: none;
-  padding: 0;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -493,7 +486,7 @@
 .pricing__box__plan {
   font-size: 20px;
   font-weight: 700;
-  margin: 70% auto -2em auto;
+  margin: 50% auto -2em auto;
 }
 @media (min-width: 601px) {
   .pricing__box__plan {
@@ -594,7 +587,6 @@
   color: gray;
 }
 .footer__images {
-  display: absolute;
   margin: 1em 0.5em 0 0px;
   text-align: right;
 }
@@ -612,7 +604,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
-    padding: 0 10%;
+    padding: 4em 10% 1em;
   }
 }
 .contact__title {
@@ -645,6 +637,7 @@
 @media only screen and (min-width: 800px) {
   .contact__info {
     display: flex;
+    margin: 1em 1em 0.5em 9em;
     flex-direction: column;
     align-items: baseline;
   }

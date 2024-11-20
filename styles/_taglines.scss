@@ -1,14 +1,14 @@
 .taglines {
     font-family: 'Raleway';
-    padding: 2.5em 1.8em;
+    padding: 3em 0;
     min-height: 400px;
     background-color: rgb(247, 247, 247);
 
     &__list {
-        padding: 0;
         list-style: none;
 
         @media only screen and (min-width: 800px) {
+            padding: 0 3em;
             display: grid;
             grid-template-columns: auto 43%;
             align-items: center;
@@ -17,7 +17,8 @@
             grid-column: span 2;
             }
 
-            & > li:last-of-type {
+            & > article:last-of-type {
+            margin: 0 6% 0 26%;
             grid-column: 1;
             grid-row: 3; 
             }
@@ -25,21 +26,21 @@
             & > .taglines__box {
             grid-column: 2;
             grid-row: 3;
-            height: 15rem;
+            height: 17rem;
             width: 65%;
-            margin: 5% 25% 5% 0;
+            margin: 5% 0% 5% 0;
             }
         }
         &__item {
             border-radius: 3px;
             border: 1px solid rgb(234, 235, 238);
-            padding: 1em;
+            padding: 1.5em;
             margin: 2em 1em;
             background-color: white;
 
             &:nth-of-type(3) {
                 margin: 2em 1em 0 1em;
-                padding:0 1.4em 1em 1.4em;
+                padding:1em 9em 1em 1.4em;
             }
             
             @media only screen and (min-width: 800px) {
@@ -52,14 +53,14 @@
 
                 .taglines__list__item__content {
                     margin: 0 3% 0 3%;
-                    padding: 1em 0 1em 0;
+                    padding: 1em 4em 1em 0;
 
                     &--first {
                     grid-column: 1;
                     grid-row: 1;
                     }
                     &--second {
-                        margin: 0 10% 0 20%;
+                        margin: 0 0 0 20%;
                     }
                 }
 
@@ -70,8 +71,7 @@
 
                 &:nth-of-type(3) {
                     display: block;
-                    margin: 0 18% 0 25%;
-                    height: 16rem;
+                    height: 17rem;
                 }
             }     
             
@@ -99,7 +99,7 @@
             &__title {
                 font-size: 1.6rem;
                 text-align: left;
-                margin: 1em auto;
+                margin: 1em 5em 1em 0;
                 font-weight: 400;
             }
 
@@ -113,7 +113,7 @@
             &__first {
                 position: relative;
                 &__laptop {
-                    padding-top: 3%;
+                    padding-top: 1rem;
                     width: 65%;
                     height: auto;
                     transform: translate(-15%, -3%);
@@ -141,7 +141,7 @@
                 
                 &__phone {
                     padding-top: 3%;
-                    width: 55%;
+                    width: 59%;
                     height: auto;
                     transform: translate(-20%, 10%);
                     
@@ -181,7 +181,7 @@
         height: auto;
         transform: translate(0%, 12%);
         @media only screen and (min-width: 800px) {
-            transform: translate(6%, 3em);
+            transform: translate(6%, 4em);
         }
     }
 }
