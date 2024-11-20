@@ -266,7 +266,7 @@
   }
   .taglines__list__item:nth-of-type(3) {
     display: block;
-    height: 17rem;
+    min-height: 17rem;
   }
 }
 .taglines__list__item .taglines__list__item__line {
@@ -335,15 +335,32 @@
 }
 .taglines__list__item__second__phone {
   padding-top: 3%;
-  width: 59%;
+  width: 55%;
   height: auto;
   transform: translate(-20%, 10%);
+}
+@media only screen and (min-width: 800px) {
+  .taglines__list__item__second__phone {
+    padding-top: 3%;
+    width: 70%;
+    height: auto;
+    transform: translate(14%, 6%);
+  }
 }
 .taglines__list__item__second__ellipse {
   width: 40%;
   height: auto;
-  transform: translate(70%, -15%);
+  transform: translate(70%, -8%);
   z-index: -1;
+}
+@media only screen and (min-width: 800px) {
+  .taglines__list__item__second__ellipse {
+    position: absolute;
+    width: 16%;
+    height: auto;
+    transform: translate(13%, -1%);
+    z-index: 0;
+  }
 }
 .taglines__list__item__third__title {
   margin: 1em 2em 1em 0;
@@ -599,7 +616,7 @@
   padding-top: 3em;
   width: 100%;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -613,31 +630,39 @@
   font-weight: 400;
   margin: 0 0 0.1em 0.4em;
 }
+@media only screen and (min-width: 600px) {
+  .contact__title {
+    font-size: 3rem;
+  }
+}
 .contact__subtitle {
   font-family: "Open Sans";
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0 0 0.3em 1em;
 }
-.contact__input {
-  padding: 0 0 0 2em;
+@media only screen and (min-width: 600px) {
+  .contact__subtitle {
+    margin: 1em 0;
+  }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .contact__input {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0 2em 0 0;
   }
 }
 .contact__info {
   display: inline-block;
   vertical-align: baseline;
-  margin: 1em 1em 0.5em 2em;
+  margin: 1em 1em 0.5em 1em;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .contact__info {
     display: flex;
-    margin: 1em 1em 0.5em 9em;
+    margin: 1em 1em 0.5em 20em;
     flex-direction: column;
     align-items: baseline;
   }
@@ -661,7 +686,7 @@
   transform: translateY(-0.3em);
 }
 .contact__info__input {
-  margin: 1em 1em;
+  margin: 1em 3em 2em 2em;
   border: none;
   border-bottom: 2px lightgray solid;
   color: rgb(8, 166, 228);
