@@ -5,8 +5,7 @@
     background-color: rgb(247, 247, 247);
 
     &__list {
-        list-style: none;
-
+        
         @media only screen and (min-width: 800px) {
             padding: 0 3em;
             display: grid;
