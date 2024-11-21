@@ -60,7 +60,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .navbar__list__item {
-    padding: 30px 2em;
+    padding: 30px 2em 22px;
     display: flex;
     color: lightgray;
     height: 100%;
@@ -302,7 +302,7 @@
   }
 }
 .taglines__list__item__third__title {
-  margin: 1em 2em 1em 0;
+  margin: 1em 0;
   font-size: 2.8rem;
   font-weight: 400;
 }
@@ -321,6 +321,7 @@
 @media only screen and (min-width: 600px) {
   .taglines__list__item__text {
     font-size: 1.1rem;
+    line-height: 22px;
   }
 }
 .taglines__list__item__first {
