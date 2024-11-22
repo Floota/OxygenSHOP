@@ -303,12 +303,13 @@
   }
 }
 .taglines__list__item__third__title {
-  margin: 1.5em 0 1em;
+  margin: 0 0 1em;
   font-size: 1.6rem;
   font-weight: 400;
 }
 @media only screen and (min-width: 600px) {
   .taglines__list__item__third__title {
+    margin: 1.5em 0 1em;
     font-size: 2rem;
   }
 }
@@ -413,7 +414,7 @@
   text-align: center;
 }
 .pricing__title {
-  padding: 2.5em 0 0.1em 0;
+  padding: 2em 0 0.1em 0;
   font-size: 2rem;
   font-weight: 400;
   font-family: "Raleway";
