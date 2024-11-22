@@ -26,7 +26,6 @@
             grid-column: 2;
             grid-row: 3;
             min-height: 20rem;
-            max-height: 20rem;
             width: 65%;
             margin: 8% 0% 8% 0;
             }
@@ -42,7 +41,7 @@
                 margin: 0 1.5em;
                 @media only screen and (min-width: 800px) {                             
                     margin: 2em 1em 0 1em;
-                    padding:1em 3em 1em 2em;
+                    padding: 1em 17% 1em 2em;
                 }
                 
             }
@@ -76,7 +75,7 @@
                 &:nth-of-type(3) {
                     display: block;
                     min-height: 20rem;
-                    max-height: 20rem;
+                    max-height: 150%;
                 }
             }     
             
