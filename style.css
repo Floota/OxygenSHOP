@@ -60,7 +60,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .navbar__list__item {
-    padding: 30px 2em 22px;
+    padding: 2.5em 2em;
     display: flex;
     color: lightgray;
     height: 100%;
@@ -213,14 +213,15 @@
     grid-column: span 2;
   }
   .taglines__list > article:last-of-type {
-    margin: 1% 5% 0 26%;
+    margin: 0 6% 0 26%;
     grid-column: 1;
     grid-row: 3;
   }
   .taglines__list > .taglines__box {
     grid-column: 2;
     grid-row: 3;
-    height: 24rem;
+    min-height: 20rem;
+    max-height: 20rem;
     width: 65%;
     margin: 8% 0% 8% 0;
   }
@@ -238,20 +239,20 @@
 @media only screen and (min-width: 800px) {
   .taglines__list__item:nth-of-type(3) {
     margin: 2em 1em 0 1em;
-    padding: 1em 12em 1em 2em;
+    padding: 1em 3em 1em 2em;
   }
 }
 @media only screen and (min-width: 800px) {
   .taglines__list__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2em 15%;
+    margin: 1em 15%;
     align-items: center;
     gap: 20px;
   }
   .taglines__list__item .taglines__list__item__content {
-    margin: 0 3% 0 3%;
-    padding: 1em 5em 1em 0;
+    margin: 0;
+    padding: 1em 4em 1em 0;
   }
   .taglines__list__item .taglines__list__item__content--first {
     grid-column: 1;
@@ -266,7 +267,8 @@
   }
   .taglines__list__item:nth-of-type(3) {
     display: block;
-    min-height: 24rem;
+    min-height: 20rem;
+    max-height: 20rem;
   }
 }
 .taglines__list__item .taglines__list__item__line {
@@ -287,28 +289,28 @@
 }
 .taglines__list__item .taglines__list__item__line--third {
   border: 2px solid rgb(85, 223, 180);
-  margin: 3em 0;
+  margin: 1.5em 0;
 }
 .taglines__list__item__title {
   font-size: 1.6rem;
   text-align: left;
-  margin: 1em 3em 1em 0;
+  margin: 1em 2em 1em 0;
   font-weight: 400;
 }
 @media only screen and (min-width: 600px) {
   .taglines__list__item__title {
     margin: 1em 3em 1em 0;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 }
 .taglines__list__item__third__title {
-  margin: 1em 0;
+  margin: 1.5em 0 1em;
   font-size: 1.6rem;
   font-weight: 400;
 }
 @media only screen and (min-width: 600px) {
   .taglines__list__item__third__title {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 .taglines__list__item__text {
@@ -320,8 +322,8 @@
 }
 @media only screen and (min-width: 600px) {
   .taglines__list__item__text {
-    font-size: 1.1rem;
-    line-height: 22px;
+    font-size: 0.8rem;
+    line-height: 20px;
   }
 }
 .taglines__list__item__first {
@@ -529,7 +531,7 @@
 }
 @media (min-width: 601px) {
   .pricing__box__plan {
-    margin: 5% 0 auto 0;
+    margin: 15% 0 auto 0;
     padding: 0;
   }
 }
