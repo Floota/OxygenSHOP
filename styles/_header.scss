@@ -47,7 +47,7 @@
     &__item {
         display: none;
         @media only screen and (min-width: 1000px) {
-            padding:2.5em 2em;
+            padding: 2.3em 2em;
             display: flex;
             color: lightgray;
             height: 100%;
@@ -87,7 +87,7 @@
         padding: 1.5em 6.5em 1.5em 6.5em;
         border-radius: 1cm;
         background-color: rgb(8, 166, 228);
-        box-shadow: 2px 8px 15px rgb(46, 199, 255);
+        box-shadow: 2px 8px 15px rgb(139 224 255);
         @media only screen and (min-width: 750px) {
             margin-top: 35px;
             padding: 1.5em 10.5em 1.5em 10.5em;

@@ -68,7 +68,7 @@
             margin: 1em 2em 0 0.5em;
             transform: translateY(-0.3em);
         }
-        &__input[type=text] {
+        &__input {
             margin: 1em 0.5em 2em 2em;
             border: none;
             border-bottom: 2px lightgray solid;
@@ -82,11 +82,9 @@
                 font-size: 0.8em;
             }
             &:focus {
-                border: none;
-                border-bottom: 2px lightgray solid;
+                outline:none;
+                font-size: 1em;
             }
-
-            
         }
     }
     &__checkbox[type="checkbox"] {

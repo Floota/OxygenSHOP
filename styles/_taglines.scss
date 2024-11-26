@@ -32,6 +32,7 @@
             min-height: 20rem;
             }
         }
+        
         &__item {
             border-radius: 3px;
             border: 1px solid rgb(234, 235, 238);
@@ -47,7 +48,16 @@
                 }
                 
             }
-            
+            &__image {
+                &--first {
+                    justify-self: center;
+                    max-width: 30em;
+                }
+                &--second {
+                    justify-self: center;
+                    max-width: 30em;
+                }
+            }
             @media only screen and (min-width: 1000px) {
                 
                 display: grid;
@@ -66,7 +76,7 @@
                         margin: 0 3em 0 20%;
                     }
                 }
-
+                
                 .taglines__list__item__image--first {
                     grid-column: 2;
                     grid-row: 1;
@@ -197,15 +207,18 @@
         background-color: rgb(85, 223, 180);
         border-radius: 0.2em;
         height: 8%;
-
+        max-height: 22em;
     }
     &__box__trumpet {
         display: block;
         position: relative;
         width: 85%;
+        max-width: 25em;
+        max-width: 36em;
         height: auto;
         transform: translate(0%, 12%);
-        @media only screen and (min-width: 800px) {
+        max-height: 22em;
+        @media only screen and (min-width: 1000px) {
             transform: translate(8%, 5em);
             width: 70%;
         }

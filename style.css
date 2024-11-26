@@ -60,7 +60,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .navbar__list__item {
-    padding: 2.5em 2em;
+    padding: 2.3em 2em;
     display: flex;
     color: lightgray;
     height: 100%;
@@ -101,7 +101,7 @@
   padding: 1.5em 6.5em 1.5em 6.5em;
   border-radius: 1cm;
   background-color: rgb(8, 166, 228);
-  box-shadow: 2px 8px 15px rgb(46, 199, 255);
+  box-shadow: 2px 8px 15px rgb(139, 224, 255);
 }
 @media only screen and (min-width: 750px) {
   .landing__button {
@@ -244,6 +244,14 @@
     margin: 0 3em 0 0;
     padding: 1em 26% 1em 2em;
   }
+}
+.taglines__list__item__image--first {
+  justify-self: center;
+  max-width: 30em;
+}
+.taglines__list__item__image--second {
+  justify-self: center;
+  max-width: 30em;
 }
 @media only screen and (min-width: 1000px) {
   .taglines__list__item {
@@ -394,15 +402,19 @@
   background-color: rgb(85, 223, 180);
   border-radius: 0.2em;
   height: 8%;
+  max-height: 22em;
 }
 .taglines__box__trumpet {
   display: block;
   position: relative;
   width: 85%;
+  max-width: 25em;
+  max-width: 36em;
   height: auto;
   transform: translate(0%, 12%);
+  max-height: 22em;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .taglines__box__trumpet {
     transform: translate(8%, 5em);
     width: 70%;
@@ -702,7 +714,7 @@
   margin: 1em 2em 0 0.5em;
   transform: translateY(-0.3em);
 }
-.contact__info__input[type=text] {
+.contact__info__input {
   margin: 1em 0.5em 2em 2em;
   border: none;
   border-bottom: 2px lightgray solid;
@@ -711,13 +723,13 @@
   letter-spacing: 0.3em;
   width: 90%;
 }
-.contact__info__input[type=text]::-webkit-input-placeholder {
+.contact__info__input::-webkit-input-placeholder {
   color: rgb(8, 166, 228);
   font-size: 0.8em;
 }
-.contact__info__input[type=text]:focus {
-  border: none;
-  border-bottom: 2px lightgray solid;
+.contact__info__input:focus {
+  outline: none;
+  font-size: 1em;
 }
 .contact__checkbox[type=checkbox] {
   display: inline-block;
