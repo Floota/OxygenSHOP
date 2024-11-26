@@ -421,9 +421,10 @@
 }
 @media only screen and (min-width: 800px) {
   .pricing__boxes {
-    margin: 0 12% 0 12%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    max-width: 80em;
   }
 }
 .pricing__boxes__first {
@@ -633,12 +634,12 @@
   padding-top: 3em;
   width: 100%;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30em 30em;
     gap: 1em;
-    padding: 4em 10% 1em;
+    justify-content: center;
   }
 }
 .contact__title {
@@ -679,7 +680,6 @@
 @media only screen and (min-width: 800px) {
   .contact__info {
     display: flex;
-    margin: 1em 1em 0.5em 30%;
     flex-direction: column;
     align-items: baseline;
   }
