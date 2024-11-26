@@ -198,22 +198,28 @@
 
 .taglines {
   font-family: "Raleway";
-  padding: 3em 0;
+  padding: 3em 1.5em;
   min-height: 400px;
   background-color: rgb(247, 247, 247);
+  width: 100%;
+  justify-items: center;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+  .taglines {
+    padding: 3em 3em;
+  }
+}
+@media only screen and (min-width: 1000px) {
   .taglines__list {
-    padding: 0 3em;
     display: grid;
     grid-template-columns: auto 43%;
     align-items: center;
+    max-width: 65em;
   }
   .taglines__list__item {
     grid-column: span 2;
   }
   .taglines__list > article:last-of-type {
-    margin: 0 6% 0 26%;
     grid-column: 1;
     grid-row: 3;
   }
@@ -221,44 +227,40 @@
     grid-column: 2;
     grid-row: 3;
     min-height: 20rem;
-    width: 65%;
-    margin: 8% 0% 8% 0;
   }
 }
 .taglines__list__item {
   border-radius: 3px;
   border: 1px solid rgb(234, 235, 238);
   padding: 1.5em;
-  margin: 0 1.5em 1.5em;
+  margin: 0 0 2.5em;
   background-color: white;
 }
 .taglines__list__item:nth-of-type(3) {
-  margin: 0 1.5em;
+  margin: 1em 0 0 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item:nth-of-type(3) {
-    margin: 2em 1em 0 1em;
+    margin: 0 3em 0 0;
     padding: 1em 17% 1em 2em;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1em 15%;
     align-items: center;
-    gap: 20px;
   }
   .taglines__list__item .taglines__list__item__content {
     margin: 0;
-    padding: 1em 6em 1em 0;
+    padding: 1em 28% 1em 0;
   }
   .taglines__list__item .taglines__list__item__content--first {
     grid-column: 1;
     grid-row: 1;
   }
   .taglines__list__item .taglines__list__item__content--second {
-    margin: 0 0 0 20%;
+    margin: 0 3em 0 20%;
   }
   .taglines__list__item .taglines__list__item__image--first {
     grid-column: 2;
@@ -273,7 +275,7 @@
 .taglines__list__item .taglines__list__item__line {
   display: none;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item .taglines__list__item__line {
     display: block;
     margin: 2em 0;
@@ -322,7 +324,6 @@
 }
 @media only screen and (min-width: 600px) {
   .taglines__list__item__text {
-    font-size: 0.8rem;
     line-height: 20px;
   }
 }
@@ -335,7 +336,7 @@
   height: auto;
   transform: translate(-15%, -3%);
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item__first__laptop {
     width: 60%;
     height: auto;
@@ -348,7 +349,7 @@
   transform: translate(220%, -65%);
   z-index: -1;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item__first__ellipse {
     width: 30%;
     height: auto;
@@ -364,7 +365,7 @@
   height: auto;
   transform: translate(-20%, 10%);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item__second__phone {
     padding-top: 3%;
     width: 70%;
@@ -378,10 +379,10 @@
   transform: translate(70%, -8%);
   z-index: -1;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .taglines__list__item__second__ellipse {
     position: absolute;
-    width: 16%;
+    width: 15em;
     height: auto;
     transform: translate(13%, -1%);
     z-index: 0;
@@ -392,7 +393,6 @@
   position: relative;
   background-color: rgb(85, 223, 180);
   border-radius: 0.2em;
-  margin: 0 1.5em 1.5em 1.5em;
   height: 8%;
 }
 .taglines__box__trumpet {
@@ -668,7 +668,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 32% 0 0;
+    padding: 0 9% 0 0;
   }
 }
 .contact__info {
@@ -702,8 +702,8 @@
   margin: 1em 2em 0 0.5em;
   transform: translateY(-0.3em);
 }
-.contact__info__input {
-  margin: 1em 1em 2em 2em;
+.contact__info__input[type=text] {
+  margin: 1em 0.5em 2em 2em;
   border: none;
   border-bottom: 2px lightgray solid;
   color: rgb(8, 166, 228);
@@ -711,9 +711,13 @@
   letter-spacing: 0.3em;
   width: 85%;
 }
-.contact__info__input::-webkit-input-placeholder {
+.contact__info__input[type=text]::-webkit-input-placeholder {
   color: rgb(8, 166, 228);
   font-size: 0.8em;
+}
+.contact__info__input[type=text]:focus {
+  border: none;
+  border-bottom: 2px lightgray solid;
 }
 .contact__checkbox[type=checkbox] {
   display: inline-block;
@@ -747,7 +751,7 @@
   font-family: "Open Sans";
   font-size: 12px;
   display: inline-block;
-  margin: -3em 0 3em 6em;
+  margin: -3em 2em 3em 6em;
 }
 .contact__container {
   text-align: right;

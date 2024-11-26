@@ -1,23 +1,27 @@
 .taglines {
     font-family: 'Raleway';
-    padding: 3em 0;
+    padding: 3em 1.5em;
     min-height: 400px;
     background-color: rgb(247, 247, 247);
+    width: 100%;
+    justify-items: center;
+    @media only screen and (min-width: 1000px) {
+        padding: 3em 3em;
+    }
 
     &__list {
 
-        @media only screen and (min-width: 800px) {
-            padding: 0 3em;
+        @media only screen and (min-width: 1000px) {
             display: grid;
             grid-template-columns: auto 43%;
             align-items: center;
+            max-width: 65em;
 
             &__item {
             grid-column: span 2;
             }
 
             & > article:last-of-type {
-            margin: 0 6% 0 26%;
             grid-column: 1;
             grid-row: 3; 
             }
@@ -26,44 +30,40 @@
             grid-column: 2;
             grid-row: 3;
             min-height: 20rem;
-            width: 65%;
-            margin: 8% 0% 8% 0;
             }
         }
         &__item {
             border-radius: 3px;
             border: 1px solid rgb(234, 235, 238);
             padding: 1.5em;
-            margin: 0 1.5em 1.5em;
+            margin: 0 0 2.5em;
             background-color: white;
 
             &:nth-of-type(3) {
-                margin: 0 1.5em;
-                @media only screen and (min-width: 800px) {                             
-                    margin: 2em 1em 0 1em;
+                margin: 1em 0 0 0;
+                @media only screen and (min-width: 1000px) {                             
+                    margin: 0 3em 0 0;
                     padding: 1em 17% 1em 2em;
                 }
                 
             }
             
-            @media only screen and (min-width: 800px) {
+            @media only screen and (min-width: 1000px) {
                 
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                margin: 1em 15%;
                 align-items: center;
-                gap: 20px;
 
                 .taglines__list__item__content {
                     margin: 0;
-                    padding: 1em 6em 1em 0;
+                    padding: 1em 28% 1em 0;
 
                     &--first {
                     grid-column: 1;
                     grid-row: 1;
                     }
                     &--second {
-                        margin: 0 0 0 20%;
+                        margin: 0 3em 0 20%;
                     }
                 }
 
@@ -82,7 +82,7 @@
             .taglines__list__item__line {
                 display: none;
 
-                @media only screen and (min-width: 600px) {
+                @media only screen and (min-width: 1000px) {
                     display: block;
                     margin: 2em 0;
                     width: 80%;
@@ -128,7 +128,6 @@
                 text-align: left;
                 text-wrap: wrap;
                 @media only screen and (min-width: 600px) {
-                    font-size: 0.8rem;
                     line-height: 20px;
                 }
             }
@@ -140,7 +139,7 @@
                     width: 65%;
                     height: auto;
                     transform: translate(-15%, -3%);
-                    @media only screen and (min-width: 600px) {
+                    @media only screen and (min-width: 1000px) {
                         width: 60%;
                         height: auto;
                         transform: translate(-25%, 5%);
@@ -152,7 +151,7 @@
                     height: auto;
                     transform: translate(220%, -65%);
                     z-index: -1;
-                    @media only screen and (min-width: 600px) {
+                    @media only screen and (min-width: 1000px) {
                         width: 30%;
                         height: auto;
                         transform: translate(160%, -30%);
@@ -167,7 +166,7 @@
                     width: 55%;
                     height: auto;
                     transform: translate(-20%, 10%);
-                    @media only screen and (min-width: 800px) {
+                    @media only screen and (min-width: 1000px) {
                         padding-top: 3%;
                         width: 70%;
                         height: auto;
@@ -180,9 +179,9 @@
                     height: auto;
                     transform: translate(70%, -8%);
                     z-index: -1;       
-                    @media only screen and (min-width: 800px) {         
+                    @media only screen and (min-width: 1000px) {         
                     position: absolute;
-                    width: 16%;
+                    width: 15em;
                      height: auto;
                     transform: translate(13%, -1%);
                     z-index: 0;
@@ -197,7 +196,6 @@
         position: relative;
         background-color: rgb(85, 223, 180);
         border-radius: 0.2em;
-        margin: 0 1.5em 1.5em 1.5em;
         height: 8%;
 
     }
