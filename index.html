@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Max">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="./styles/style.css" type="text/css" />
         <title>Oxygen Shop</title>
       </head>
       <body>
@@ -28,6 +28,15 @@
                 <p class="landing__text">Open shop on our platform and increase your sales.</p>
                 <button class="landing__button">Open your shop</button>
                 <img class="landing__image" src="./images/Background.png">
+            </section>
+            <section class="popup">
+                <div class="popup__background"></div>
+                <div class="popup__content">
+                    <p class="popup__content__text">Subscribe to our Newsletter!</p>
+                    <button class="popup__content__exit">╳</button>
+                    <input class="popup__content__input" type="text" placeholder = "EMAIL">
+                    <button class="popup__content__send">Send</button>
+                </div>
             </section>
         </header>
         <main>
@@ -187,5 +196,7 @@
                 <img class="footer__images--facebook" src="./images/FacebookLogo.png" alt="Facebook Logo">
             </div>
         </footer>
+        <script src="./js/screen-position.js"></script>
+        <script src="./js/popup.js"></script>
       </body>
 </html>

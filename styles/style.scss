@@ -1,9 +1,10 @@
-@use './styles/header';
-@use './styles/stats';
-@use './styles/taglines';
-@use './styles/pricing';
-@use './styles/footer';
-@use './styles/contact';
+@use './header';
+@use './stats';
+@use './taglines';
+@use './pricing';
+@use './footer';
+@use './contact';
+@use './popup';
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 

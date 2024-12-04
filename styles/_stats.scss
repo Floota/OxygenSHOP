@@ -44,12 +44,12 @@
             &__number {
                 letter-spacing: 0.3em;
                 font-size: 1.2rem;
-                font-weight: 900;
+                font-weight: 800;
             }
             &__text {
                 margin: 1em 6em;
                 @media only screen and (min-width: 1000px) {
-                    margin: 1em 36%;
+                    margin: 1em 32%;
                     line-height: 1.2em;
                 }
                 font-size: 1rem;
