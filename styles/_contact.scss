@@ -36,6 +36,11 @@
         justify-content: flex-end;
         padding: 0 9% 0 0;
         }
+        &__text {
+            font-size: 0.8em;
+            margin: 0em 0em 0em 2em;
+            transition: all 1s;
+        }
     }
     &__info {
         display: inline-block;
@@ -73,20 +78,19 @@
             border: none;
             border-bottom: 2px lightgray solid;
             color: rgb(8, 166, 228);
-            line-height: 4.5em;
-            letter-spacing: 0.3em;
+            line-height: 1.5em;
             width: 90%;
-
-            &::-webkit-input-placeholder {
-                color: rgb(8, 166, 228);
-                font-size: 0.8em;
-            }
+            transition: border 1s ease-out;
             &:focus {
                 outline:none;
+            }
+            &.error { 
+                border-bottom: 2px solid red;
             }
         }
     }
     &__checkbox[type="checkbox"] {
+        cursor: pointer;
         display: inline-block;
         position: relative;
         margin: 1em 0 0 2em;
@@ -98,7 +102,10 @@
         border-radius: 0.3em;
         outline: none;
         cursor: pointer;
-
+        transition: border 0.5s ease;
+        &.error {
+            border: 15px solid red;
+        }
         &:checked {
             border-color: gray;
 
@@ -134,5 +141,16 @@
         border-radius: 1cm;
         background-color: rgb(8, 166, 228);
         box-shadow: 2px 8px 15px rgb(106, 215, 255);
+        transition: scale 1s, background-color 0.5s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.01);
+            background-color: rgb(21, 204, 236);
+        }
+        &:active {
+            transform: scale(0.98);
+            background-color: rgb(54, 225, 255);
+            transition: scale 0.1s, background-color 0s;
+        }
     }
 }

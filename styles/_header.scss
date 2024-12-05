@@ -25,6 +25,7 @@
         }
     }
     &__menu {
+        cursor: pointer;
         padding: 0.1em 0.5em 0 0;
         border: none;
         background-color: white;
@@ -37,20 +38,22 @@
     }
     &__list{
         &.visible {
-            display: flex;
-            flex-direction: column;
-            margin-top: 45px;
-            font-family: 'Open Sans';
-            position: sticky;
-            font-weight: 900;
-            font-size: 0.7em;
-            letter-spacing: 0.2em;
-            line-height: 3em;
-            border: none;
-            box-shadow: 0 5px 5px lightgray;
-            background-color: white;
-            transform: translate(0em, -2em);
-            z-index: 1;
+            @media only screen and (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 45px;
+                font-family: 'Open Sans';
+                position: sticky;
+                font-weight: 900;
+                font-size: 0.7em;
+                letter-spacing: 0.2em;
+                line-height: 3em;
+                border: none;
+                box-shadow: 0 5px 5px lightgray;
+                background-color: white;
+                transform: translate(0em, -2em);
+                z-index: 1;
+            }
         }
         display: none;
         
@@ -65,6 +68,7 @@
             justify-content: space-around;
         }  
     &__item {
+            cursor: pointer;
             display:flex;
             color: lightgray;
             background-color: white;

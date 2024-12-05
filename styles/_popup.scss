@@ -1,5 +1,8 @@
 .popup.visible {
     display: flex;
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
 }
 .popup {
     display:none;
@@ -33,26 +36,29 @@
         background-color: rgb(255, 255, 255, 1);
 
         &__text {
-            font-size: 1.8em
+            font-size: 1.8em;
+            margin: 0 0 1em 0;
         }
         &__input {
             margin: 1.5em 0em;
             border: none;
             border-bottom: 2px lightgray solid;
             color: rgb(8, 166, 228);
-            line-height: 2.5em;
+            line-height: 1.5em;
             width: 45%;
             text-align: center;
-
-            &::-webkit-input-placeholder {
-                color: rgb(8, 166, 228);
-                font-size: 1em;
+            &__text {
+                font-size: 1em
             }
             &:focus {
                 outline:none;
             }
+            &.error { 
+                border-bottom: 2px solid red;
+            }
         }
         &__exit {
+            cursor: pointer;
             position:absolute;
             font-size: 1.5em;
             right: 1.5em;
@@ -66,10 +72,11 @@
             }
         }
         &__send {
+        cursor: pointer;
         border: none;
         color: white;
         font-weight: bold;
-        padding: 1.5em 3em;
+        padding: 1em 3em;
         border-radius: 1cm;
         background-color: rgb(8, 166, 228);
         box-shadow: 2px 8px 15px rgb(139 224 255);

@@ -1,7 +1,15 @@
 .return {
-    display:none;
+    display: none;
+    &.visible {
+        opacity: 1; 
+        visibility: visible;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
     @media only screen and (min-width: 800px) {
-        display:block;
+        display: block;
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.3s, visibility 0.3s;
         position: fixed;
         bottom: 8%;
         right: 3%;
@@ -16,13 +24,13 @@
             background-color: rgb(8, 166, 228);
             font-size: 2.5em;
             animation: moving 1s infinite ease-in-out paused;
-            transition: bottom 0.3s ease;
+
         &:hover {
             animation: moving 1s infinite ease-in-out;
             animation-direction:alternate;
                 @keyframes moving {
                     0% {transform: translateY(0em)}
-                    50% {transform: translateY(-0.5em)}
+                    50% {transform: translateY(-0.3em)}
                     100% {transform: translateY(0em)}
                 }
             }

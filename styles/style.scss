@@ -6,6 +6,7 @@
 @use './contact';
 @use './popup';
 @use './return';
+@use './slider';
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -20,4 +21,9 @@ body {
     min-width: 320px;
     height: 100%;
     font-family: 'Raleway';
+}
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
