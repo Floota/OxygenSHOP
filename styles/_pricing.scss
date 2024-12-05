@@ -9,7 +9,32 @@
         font-weight: 400;
         font-family: 'Raleway';
     }
-
+    &__currency {
+        margin: 2em 0em 1em 0em;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2em 15% 0 15%;
+        &__button {
+            font-family: 'Open Sans';
+            border:none;
+            color:white;
+            font-size: 1.2em;
+            padding: 0.5em 1em;
+            border-radius: 2em;
+            background-color: rgb(8, 166, 228);
+            box-shadow: 0px 5px 5px rgb(146, 209, 235);
+            transition: scale 1s, background-color 0.5s;
+            &:hover {
+                transform: scale(1.05);
+                background-color: rgb(21, 204, 236);
+            }
+            &:active {
+                transform: scale(0.95);
+                background-color: rgb(54, 225, 255);
+                transition: scale 0.1s, background-color 0s;
+            }
+        }
+    }
     &__boxes {
         
         @media only screen and (min-width: 800px) {
@@ -76,12 +101,17 @@
     }
 
     @mixin pricing-button {
+        cursor: pointer;
         transform: translateY(2em);
         padding: 1.5em 4em;
         border: none;
         color: white;
         border-radius: 2em;
-        font-weight: 700
+        font-weight: 700;
+        transition: scale 0.5s;
+        &:hover {
+            scale: 1.1;
+        }
     }
 
     .pricing__boxes__button--first {

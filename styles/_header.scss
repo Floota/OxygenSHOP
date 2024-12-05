@@ -1,7 +1,7 @@
 
 .navbar {
     display: block;
-    height: 70px;
+    height: 60px;
     box-shadow: 0 5px 5px lightgray;
     text-wrap: nowrap;
     @media only screen and (min-width: 1000px) {
@@ -25,31 +25,64 @@
         }
     }
     &__menu {
-        padding: 0.4em 0.5em 0 0;
+        cursor: pointer;
+        padding: 0.1em 0.5em 0 0;
         border: none;
         background-color: white;
-        font-size: 35px;
+        font-size: 2em;
         color: rgb(8, 166, 228);
+        transition: opacity 1s;
         @media only screen and (min-width: 1000px) {
             display: none;
         }
     }
     &__list{
-        font-family: 'Open Sans';
-        font-weight: 900;
-        font-size: 0.7em;
-        letter-spacing: 0.2em;
+        &.visible {
+            @media only screen and (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 45px;
+                font-family: 'Open Sans';
+                position: sticky;
+                font-weight: 900;
+                font-size: 0.7em;
+                letter-spacing: 0.2em;
+                line-height: 3em;
+                border: none;
+                box-shadow: 0 5px 5px lightgray;
+                background-color: white;
+                transform: translate(0em, -2em);
+                z-index: 1;
+            }
+        }
+        display: none;
+        
         @media only screen and (min-width: 1000px) {
+            font-family: 'Open Sans';
+            letter-spacing: 0.2em;
+            font-weight: 700;
+            line-height: 1.4em;
+            border: none;
             margin: 0 4% 0 50%;
             display: flex;
             justify-content: space-around;
         }  
     &__item {
-        display: none;
+            cursor: pointer;
+            display:flex;
+            color: lightgray;
+            background-color: white;
+            padding: 0 0 1em 2em;
+            &:hover {
+                color: black;
+            }
         @media only screen and (min-width: 1000px) {
-            padding: 2.3em 2em;
+            font-weight: 900;
+            font-size: 0.7em;
+            padding: 1.5em 2em;
             display: flex;
             color: lightgray;
+            background-color: white;
             height: 100%;
             &:hover {
                 color: black;
@@ -66,6 +99,8 @@
     padding-top: 7em;
     overflow: hidden;
     font-family: 'Open Sans';
+    z-index: 1;
+
 
     &__title {
         font: normal normal 400 2rem 'Raleway';
@@ -104,5 +139,17 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+.scroll__bar {
+    z-index: 3;
+    position: sticky;
+    top: 70px;
+    width: 0%;
+    height: 8px;
+    background: transparent;
+    &__progress {
+        height: 10px;
+        background: radial-gradient(circle, rgba(8,166,228,1) 0%, rgba(139,224,255,1) 100%);
     }
 }

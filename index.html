@@ -6,15 +6,18 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Max">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="./styles/style.css" type="text/css" />
         <title>Oxygen Shop</title>
       </head>
       <body>
+        <div class="scroll__bar">
+            <div class="scroll__bar__progress"></div>
+        </div>
         <header>
             <nav class="navbar">
                 <div class="navbar__container">
                     <p class="navbar__logo" >OXYGENShop</p>
-                    <button class="navbar__menu">≡</button>
+                    <button class="navbar__menu">☰</button>
                     <ul class="navbar__list">
                         <li class="navbar__list__item">WHY US</li>
                         <li class="navbar__list__item">BENEFITS</li>
@@ -28,6 +31,19 @@
                 <p class="landing__text">Open shop on our platform and increase your sales.</p>
                 <button class="landing__button">Open your shop</button>
                 <img class="landing__image" src="./images/Background.png">
+            </section>
+            <section class="return">
+                <button class="return__button">▲</button>
+            </section>
+            <section class="popup">
+                <div class="popup__background"></div>
+                <div class="popup__content">
+                    <p class="popup__content__text">Subscribe to our Newsletter!</p>
+                    <button class="popup__content__exit">╳</button>
+                    <p class="popup__content__input__text">EMAIL</p>
+                    <input class="popup__content__input" type="text">
+                    <button class="popup__content__send">Send</button>
+                </div>
             </section>
         </header>
         <main>
@@ -92,13 +108,18 @@
             </section>
             <section class="pricing">
                 <h2 class="pricing__title">Pricing</h2>
+                <article class="pricing__currency">
+                    <button class="pricing__currency__button" id="eur__button">EUR</button>
+                    <button class="pricing__currency__button" id="usa__button">US</button>
+                    <button class="pricing__currency__button" id="brit__button">GBP</button>
+                </article>
                 <article class="pricing__boxes">
                     <div class="pricing__boxes__first">
                         <article class="pricing__box">
                             <div class="pricing__box--left">
                                 <p class="pricing__box__plan">Basic</p>
                                 <p class="pricing__box__price">
-                                    <span class="pricing__box__price__first">$0</span>
+                                    <span class="pricing__box__price__first">$0.00</span>
                                 </p>
                             </div>
                         </article>
@@ -117,7 +138,7 @@
                         <article class="pricing__box">
                             <div class="pricing__box--left">
                                 <p class="pricing__box__plan">Proffesional</p>
-                                <p class="pricing__box__price"><span class="pricing__box__price__second">$25</span></p>
+                                <p class="pricing__box__price"><span class="pricing__box__price__second">$25.00</span></p>
                                 <p class="pricing__box__offer">Limited Offer</p>
                             </div>
                         </article>
@@ -136,7 +157,7 @@
                         <article class="pricing__box">
                             <div class="pricing__box--left">
                                 <p class="pricing__box__plan">Premium</p>
-                                <p class="pricing__box__price"><span class="pricing__box__price__third">$60</span></p>
+                                <p class="pricing__box__price"><span class="pricing__box__price__third">$60.00</span></p>
                                 <p class="pricing__box__offer">Limited Offer</p>
                             </div>
                         </article>
@@ -153,6 +174,35 @@
                     </div>
                 </article>
             </section>
+            <section class="slides__container">
+                <div class="slides" id="slider">
+                    <div class="slides__image">
+                        <img src="./images/img1.jpg" style="width:100%">
+                    </div>
+                    <div class="slides__image">
+                        <img src="./images/img2.jpg" style="width:100%">
+                    </div>
+                    <div class="slides__image">
+                        <img src="./images/img3.jpg" style="width:100%">
+                    </div>
+                    <div class="slides__image">
+                        <img src="./images/img4.jpg" style="width:100%">
+                    </div>
+                    <div class="slides__image">
+                        <img src="./images/img5.jpg" style="width:100%">
+                    </div>
+
+                <button class="slides__prev">◀</button>
+                <button class="slides__next">▶</button>
+            </div>
+            <div class="slider__dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            </section>
             <section class="contact">
                 <article class="contact__info">
                 <h2 class="contact__title">Any questions?</h2>
@@ -167,8 +217,10 @@
                     </div>
                 </article>
                 <article class="contact__input">
-                    <input class="contact__info__input" type="text" placeholder="NAME">
-                    <input class="contact__info__input" type="text" placeholder="EMAIL">
+                    <p class="contact__input__text">NAME</p>
+                    <input class="contact__info__input" id="name__input" type="text">
+                    <p class="contact__input__text">EMAIL</p>
+                    <input class="contact__info__input" id="email__input" type="text">
                 <input class="contact__checkbox" type="checkbox">
                 <p class="contact__checkbox__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
                 <div class="contact__container">
@@ -187,5 +239,13 @@
                 <img class="footer__images--facebook" src="./images/FacebookLogo.png" alt="Facebook Logo">
             </div>
         </footer>
+        <script src="./js/screen-position.js"></script>
+        <script src="./js/return.js"></script>
+        <script src="./js/popup.js"></script>
+        <script src="./js/scroll-bar.js"></script>        
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/currency-exchange.js"></script>
+        <script src="./js/slider.js"></script>
+        <script src="./js/form-validation.js"></script>
       </body>
 </html>
