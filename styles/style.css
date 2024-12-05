@@ -1040,6 +1040,11 @@
   overflow: hidden;
   background-color: black;
 }
+@media only screen and (max-width: 800px) {
+  .slides {
+    min-height: 20em;
+  }
+}
 .slides__image {
   position: absolute;
   top: 0;
