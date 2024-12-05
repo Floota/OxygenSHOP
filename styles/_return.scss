@@ -1,0 +1,31 @@
+.return {
+    display:none;
+    @media only screen and (min-width: 800px) {
+        display:block;
+        position: fixed;
+        bottom: 8%;
+        right: 3%;
+        height: 5%;
+        width: 5%;
+        z-index: 2;
+        &__button {
+            border: none;
+            border-radius: 3.5em;
+            padding: 0.1em 0.2em 0.2em 0.2em;
+            color: white;
+            background-color: rgb(8, 166, 228);
+            font-size: 2.5em;
+            animation: moving 1s infinite ease-in-out paused;
+            transition: bottom 0.3s ease;
+        &:hover {
+            animation: moving 1s infinite ease-in-out;
+            animation-direction:alternate;
+                @keyframes moving {
+                    0% {transform: translateY(0em)}
+                    50% {transform: translateY(-0.5em)}
+                    100% {transform: translateY(0em)}
+                }
+            }
+        }
+    }
+}

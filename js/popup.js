@@ -1,19 +1,20 @@
 const seenPopup = "popupShown";
+const popupElement = document.getElementsByClassName("popup")[0]
 
 const toggleElement = (target) => 
     target.classList.toggle('visible');
 
 if (!sessionStorage.getItem(seenPopup)) {
     setInterval(function () {
-        if (window.over20 == true && !sessionStorage.getItem(seenPopup)) {
-        toggleElement(document.getElementsByClassName("popup")[0])
+        if (scrollPercent >= 20 && !sessionStorage.getItem(seenPopup)) {
+        toggleElement(popupElement)
         sessionStorage.setItem(seenPopup, true)
         console.log('hi')
     }}, 1000)
     
     setTimeout(() => {
         if (!sessionStorage.getItem(seenPopup)) {
-        toggleElement(document.getElementsByClassName("popup")[0])
+        toggleElement(popupElement)
         }
     }, 5000)
 
@@ -24,7 +25,7 @@ if (!sessionStorage.getItem(seenPopup)) {
     
     elements.forEach(element => {
         element.addEventListener("click", () => {
-            toggleElement(document.getElementsByClassName("popup")[0])
+            toggleElement(popupElement)
             sessionStorage.setItem(seenPopup, true)
             console.log(window.over20)
         })

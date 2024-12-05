@@ -10,11 +10,14 @@
         <title>Oxygen Shop</title>
       </head>
       <body>
+        <div class="scroll__bar">
+            <div class="scroll__bar__progress"></div>
+        </div>
         <header>
             <nav class="navbar">
                 <div class="navbar__container">
                     <p class="navbar__logo" >OXYGENShop</p>
-                    <button class="navbar__menu">≡</button>
+                    <button class="navbar__menu">☰</button>
                     <ul class="navbar__list">
                         <li class="navbar__list__item">WHY US</li>
                         <li class="navbar__list__item">BENEFITS</li>
@@ -28,6 +31,9 @@
                 <p class="landing__text">Open shop on our platform and increase your sales.</p>
                 <button class="landing__button">Open your shop</button>
                 <img class="landing__image" src="./images/Background.png">
+            </section>
+            <section class="return">
+                <button class="return__button">▲</button>
             </section>
             <section class="popup">
                 <div class="popup__background"></div>
@@ -101,6 +107,11 @@
             </section>
             <section class="pricing">
                 <h2 class="pricing__title">Pricing</h2>
+                <article class="pricing__currency">
+                    <button class="pricing__currency__button" id="eur__button">EUR</button>
+                    <button class="pricing__currency__button" id="usa__button">US</button>
+                    <button class="pricing__currency__button" id="brit__button">GBP</button>
+                </article>
                 <article class="pricing__boxes">
                     <div class="pricing__boxes__first">
                         <article class="pricing__box">
@@ -197,6 +208,10 @@
             </div>
         </footer>
         <script src="./js/screen-position.js"></script>
+        <script src="./js/return.js"></script>
         <script src="./js/popup.js"></script>
+        <script src="./js/scroll-bar.js"></script>        
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/currency-exchange.js"></script>
       </body>
 </html>

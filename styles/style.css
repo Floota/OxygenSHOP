@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .navbar {
   display: block;
-  height: 70px;
+  height: 60px;
   box-shadow: 0 5px 5px lightgray;
   text-wrap: nowrap;
 }
@@ -31,11 +31,12 @@
   }
 }
 .navbar__menu {
-  padding: 0.4em 0.5em 0 0;
+  padding: 0.1em 0.5em 0 0;
   border: none;
   background-color: white;
-  font-size: 35px;
+  font-size: 2em;
   color: rgb(8, 166, 228);
+  transition: opacity 1s;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__menu {
@@ -43,26 +44,53 @@
   }
 }
 .navbar__list {
+  display: none;
+}
+.navbar__list.visible {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
   font-family: "Open Sans";
+  position: sticky;
   font-weight: 900;
   font-size: 0.7em;
   letter-spacing: 0.2em;
+  line-height: 3em;
+  border: none;
+  box-shadow: 0 5px 5px lightgray;
+  background-color: white;
+  transform: translate(0em, -2em);
+  z-index: 1;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__list {
+    font-family: "Open Sans";
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    line-height: 1.4em;
+    border: none;
     margin: 0 4% 0 50%;
     display: flex;
     justify-content: space-around;
   }
 }
 .navbar__list__item {
-  display: none;
+  display: flex;
+  color: lightgray;
+  background-color: white;
+  padding: 0 0 1em 2em;
+}
+.navbar__list__item:hover {
+  color: black;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__list__item {
-    padding: 2.3em 2em;
+    font-weight: 900;
+    font-size: 0.7em;
+    padding: 1.5em 2em;
     display: flex;
     color: lightgray;
+    background-color: white;
     height: 100%;
   }
   .navbar__list__item:hover {
@@ -78,6 +106,7 @@
   padding-top: 7em;
   overflow: hidden;
   font-family: "Open Sans";
+  z-index: 1;
 }
 .landing__title {
   font: normal normal 400 2rem "Raleway";
@@ -126,6 +155,19 @@
   }
 }
 
+.scroll__bar {
+  z-index: 3;
+  position: sticky;
+  top: 70px;
+  width: 0%;
+  height: 8px;
+  background: transparent;
+}
+.scroll__bar__progress {
+  height: 10px;
+  background: radial-gradient(circle, rgb(8, 166, 228) 0%, rgb(139, 224, 255) 100%);
+}
+
 .stats {
   text-align: center;
   width: 100%;
@@ -141,7 +183,7 @@
   padding: 0;
   list-style: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .stats__list {
     margin: 0 15%;
     display: flex;
@@ -430,6 +472,21 @@
   font-size: 2rem;
   font-weight: 400;
   font-family: "Raleway";
+}
+.pricing__currency {
+  margin: 2em 0em 1em 0em;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 15% 0 15%;
+}
+.pricing__currency__button {
+  font-family: "Open Sans";
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  background-color: rgb(8, 166, 228);
 }
 @media only screen and (min-width: 800px) {
   .pricing__boxes {
@@ -837,11 +894,16 @@
 }
 .popup__content__exit {
   position: absolute;
-  right: 3em;
-  top: 2em;
-  font-weight: 900;
+  font-size: 1.5em;
+  right: 1.5em;
+  top: 1em;
+  font-weight: 500;
   background-color: transparent;
   border: none;
+  transition: 0.5s;
+}
+.popup__content__exit:hover {
+  color: rgb(177, 2, 2);
 }
 .popup__content__send {
   border: none;
@@ -851,6 +913,46 @@
   border-radius: 1cm;
   background-color: rgb(8, 166, 228);
   box-shadow: 2px 8px 15px rgb(139, 224, 255);
+}
+
+.return {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .return {
+    display: block;
+    position: fixed;
+    bottom: 8%;
+    right: 3%;
+    height: 5%;
+    width: 5%;
+    z-index: 2;
+  }
+  .return__button {
+    border: none;
+    border-radius: 3.5em;
+    padding: 0.1em 0.2em 0.2em 0.2em;
+    color: white;
+    background-color: rgb(8, 166, 228);
+    font-size: 2.5em;
+    animation: moving 1s infinite ease-in-out paused;
+    transition: bottom 0.3s ease;
+  }
+  .return__button:hover {
+    animation: moving 1s infinite ease-in-out;
+    animation-direction: alternate;
+  }
+  @keyframes moving {
+    0% {
+      transform: translateY(0em);
+    }
+    50% {
+      transform: translateY(-0.5em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
 }
 
 * {

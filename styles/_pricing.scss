@@ -9,7 +9,21 @@
         font-weight: 400;
         font-family: 'Raleway';
     }
-
+    &__currency {
+        margin: 2em 0em 1em 0em;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2em 15% 0 15%;
+        &__button {
+            font-family: 'Open Sans';
+            border:none;
+            color:white;
+            font-size: 1.5em;
+            padding: 0.5em 1em;
+            border-radius: 2em;
+            background-color: rgb(8, 166, 228);
+        }
+    }
     &__boxes {
         
         @media only screen and (min-width: 800px) {

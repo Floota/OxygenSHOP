@@ -54,11 +54,16 @@
         }
         &__exit {
             position:absolute;
-            right: 3em;
-            top: 2em;
-            font-weight: 900;
+            font-size: 1.5em;
+            right: 1.5em;
+            top: 1em;
+            font-weight: 500;
             background-color: transparent;
             border: none;
+            transition: 0.5s;
+            &:hover {
+                color:rgb(177, 2, 2)
+            }
         }
         &__send {
         border: none;

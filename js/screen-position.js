@@ -1,10 +1,9 @@
-window.over20 = false
 
-window.addEventListener('scroll', scrollPosition = () => {
-    let scrolled = window.scrollY
-    if (scrolled >= document.body.offsetHeight/5) {
-        over20 = true
-    } else {
-        over20 = false
-    }
-});
+    let stickyElement = document.getElementsByClassName("scroll__bar")[0];
+    let scrollPercent = 0
+    window.addEventListener('scroll', scrollPosition = () => {
+        scrolled = window.scrollY
+        scrollPercent = (scrolled / (document.body.scrollHeight - window.innerHeight) * 100)
+    })
+    window.scrollDown = this.scrollPercent
+
