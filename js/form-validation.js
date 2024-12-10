@@ -56,8 +56,12 @@ const sendData = (name, email) => {
         .then((json) => console.log(json));
 }
 contactButton.addEventListener("click", () => {
-    if (nameValidation(nameInput.value) == true && emailValidation(emailInput.value, emailInput) == true &&     checkboxCheck(contactCheckbox) == true){
-
+    if (nameValidation(nameInput.value) != true) {
+        if (emailValidation(emailInput.value, emailInput) != true) {
+            if (checkboxCheck(contactCheckbox) == true) {
+                sendData(nameInput.value, emailInput.value);
+            }
+        }
     }
 });
 popupButton.addEventListener("click", () => {

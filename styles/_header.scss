@@ -72,14 +72,14 @@
             display:flex;
             color: lightgray;
             background-color: white;
-            padding: 0 0 1em 2em;
+            padding: 1em 0 1em 2em;
             &:hover {
                 color: black;
             }
         @media only screen and (min-width: 1000px) {
             font-weight: 900;
             font-size: 0.7em;
-            padding: 1.5em 2em;
+            padding: 1.6em 2em;
             display: flex;
             color: lightgray;
             background-color: white;

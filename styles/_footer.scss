@@ -32,8 +32,12 @@
         margin: 1em 5% 0 0;
         text-align: right;
 
-        &--facebook {
+        &--linkedin {
+            max-height: 30px;
             padding: 0 0.7em;
+        }
+        &--github {
+            max-height: 30px;
         }
     }
 }

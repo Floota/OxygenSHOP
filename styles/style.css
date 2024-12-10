@@ -82,7 +82,7 @@
   display: flex;
   color: lightgray;
   background-color: white;
-  padding: 0 0 1em 2em;
+  padding: 1em 0 1em 2em;
 }
 .navbar__list__item:hover {
   color: black;
@@ -91,7 +91,7 @@
   .navbar__list__item {
     font-weight: 900;
     font-size: 0.7em;
-    padding: 1.5em 2em;
+    padding: 1.6em 2em;
     display: flex;
     color: lightgray;
     background-color: white;
@@ -724,8 +724,12 @@
   margin: 1em 5% 0 0;
   text-align: right;
 }
-.footer__images--facebook {
+.footer__images--linkedin {
+  max-height: 30px;
   padding: 0 0.7em;
+}
+.footer__images--github {
+  max-height: 30px;
 }
 
 .contact {
@@ -1035,7 +1039,7 @@
   max-width: 1000px;
   min-width: 80%;
   width: 100%;
-  min-height: 45em;
+  min-height: 47.5em;
   position: relative;
   overflow: hidden;
   background-color: black;
