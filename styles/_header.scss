@@ -123,9 +123,14 @@
         border-radius: 1cm;
         background-color: rgb(8, 166, 228);
         box-shadow: 2px 8px 15px rgb(139 224 255);
+        transition: scale 1s ease-in-out;
         @media only screen and (min-width: 750px) {
             margin-top: 35px;
             padding: 1.5em 10.5em 1.5em 10.5em;
+        }
+        &:hover {
+            scale: 1.1;
+            cursor: pointer;
         }
     }
     &__image {
