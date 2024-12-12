@@ -21,10 +21,10 @@
                 <p class="navbar__logo">OXYGENShop</p>
                 <button class="navbar__menu">☰</button>
                 <ul class="navbar__list">
-                    <li class="navbar__list__item">WHY US</li>
-                    <li class="navbar__list__item">BENEFITS</li>
-                    <li class="navbar__list__item">PRICES</li>
-                    <li class="navbar__list__item">CONTACT</li>
+                    <li class="navbar__list__item" id="why">WHY US</li>
+                    <li class="navbar__list__item" id="benefit">BENEFITS</li>
+                    <li class="navbar__list__item" id="prices">PRICES</li>
+                    <li class="navbar__list__item" id="contact">CONTACT</li>
                 </ul>
             </div>
         </nav>
@@ -117,16 +117,13 @@
             </div>
         </section>
         <section class="pricing">
-            <h2 class="pricing__title">Pricing</h2>
-            <select class="pricing__select" id="cars">
-                <option value="EUR">EUR</option>
-                <option value="USD">USD</option>
-                <option value="GBP">GBP</option>
-            </select>
+            <h2 class="pricing__title">Pricing</h2>  
             <article class="pricing__currency">
-                <button class="pricing__currency__button" id="eur__button">EUR</button>
-                <button class="pricing__currency__button" id="usa__button">US</button>
-                <button class="pricing__currency__button" id="brit__button">GBP</button>
+                <select class="pricing__currency__select" id="cars">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                </select>
             </article>
             <article class="pricing__boxes">
                 <div class="pricing__boxes__first">
@@ -251,14 +248,14 @@
     <footer class="footer">
         <div class="footer__text">
             <p class="footer__text__name">OXYGEN Shop</p>
-            <p class="footer__text__copyright">© 2022 OXYGEN, All rights reserved</p>
+            <p class="footer__text__copyright">© 2024 OXYGEN, All rights reserved</p>
         </div>
         <div class="footer__images">
             <a href="https://www.linkedin.com/in/maxwell-redondo-435689314/">
-                <img class="footer__images--linkedin" src="./images/linkedinLogo.png" alt="Twitter Logo">
+                <img class="footer__images--linkedin" src="./images/linkedinLogo.png" alt="LinkedIn Logo">
             </a>
             <a href="https://github.com/Floota">
-                <img class="footer__images--github" src="./images/githubLogo.png" alt="Facebook Logo">
+                <img class="footer__images--github" src="./images/githubLogo.png" alt="GitHub Logo">
             </a>
         </div>
     </footer>

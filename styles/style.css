@@ -483,6 +483,19 @@
   justify-content: space-evenly;
   margin: 2em 15% 0 15%;
 }
+.pricing__currency__select {
+  background-color: rgb(8, 166, 228);
+  border-radius: 3px;
+  font-size: 1.2em;
+  box-shadow: 0px 5px 5px rgb(146, 209, 235);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+}
+.pricing__currency__select:focus-within {
+  outline: none;
+  border: none;
+}
 .pricing__currency__button {
   font-family: "Open Sans";
   border: none;
@@ -491,7 +504,6 @@
   padding: 0.5em 1em;
   border-radius: 2em;
   background-color: rgb(8, 166, 228);
-  box-shadow: 0px 5px 5px rgb(146, 209, 235);
   transition: scale 1s, background-color 0.5s;
 }
 .pricing__currency__button:hover {
