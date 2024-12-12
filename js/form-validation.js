@@ -12,6 +12,7 @@ const inputError = (element) => {
     element.classList.add("error")
     setTimeout(() => {
         element.classList.remove("error")
+        element.placeholder = ""
     }, 3000);
 }
 const nameValidation = (name) => {
@@ -57,13 +58,18 @@ const sendData = (name, email) => {
 }
 contactButton.addEventListener("click", () => {
     if (nameValidation(nameInput.value) != true) {
-        if (emailValidation(emailInput.value, emailInput) != true) {
-            if (checkboxCheck(contactCheckbox) == true) {
-                sendData(nameInput.value, emailInput.value);
-            }
-        }
+        nameInput.placeholder = "Nombre Incorrecto"
+    } 
+    if (emailValidation(emailInput.value, emailInput) != true) {
+        emailInput.placeholder = "Correo Incorrecto"
+    } 
+    if (checkboxCheck(contactCheckbox) == true) {
+        sendData(nameInput.value, emailInput.value);
     }
+
 });
 popupButton.addEventListener("click", () => {
-    emailValidation(popupInput.value, popupInput)
+    if (emailValidation(popupInput.value, popupInput) != true) {
+        popupInput.placeholder = "Correo Incorrecto"
+    }
 });
