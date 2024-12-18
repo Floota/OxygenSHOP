@@ -28,7 +28,6 @@ const emailValidation = (email, input) => {
     if (String(email).toLowerCase().match(regex)) {
         return true
     } else {
-        console.log('null')
         inputError(input)
         input.innerHTML = ""
         return false
@@ -58,7 +57,7 @@ const sendData = (name, email) => {
 }
 contactButton.addEventListener("click", () => {
     if (nameValidation(nameInput.value) != true) {
-        nameInput.placeholder = "Nombre Incorrecto"
+        nameInput.placeholder = "Nombre Incorrecto (Debe tener entre 2 y 100 carácteres)"
     } 
     if (emailValidation(emailInput.value, emailInput) != true) {
         emailInput.placeholder = "Correo Incorrecto"

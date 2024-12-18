@@ -1131,6 +1131,9 @@
 .dot:hover {
   background-color: #616161;
 }
+.dot.active {
+  background-color: #616161;
+}
 
 * {
   box-sizing: border-box;
